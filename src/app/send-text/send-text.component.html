@@ -1,0 +1,8 @@
+<div class="container">
+    <h2>Inserisci un commento</h2>
+    <form (ngSubmit)="send()">
+        <input type = "text" name = "commento" [(ngModel)]="textUser" placeholder="Inserisci un commento" required/>
+        <button type = "submit"> Invia</button> 
+    </form> 
+    <p>{{ responseMessage }}</p>
+</div>
